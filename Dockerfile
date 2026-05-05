@@ -1,0 +1,6 @@
+FROM jenkins
+USER root
+RUN apt-get update $$ apt-get install -y \ apt-tranport-https \ ca-certificates\    curl \ 
+    gnupg2 \
+    software-properties-common
+RUN curl -fsSL
